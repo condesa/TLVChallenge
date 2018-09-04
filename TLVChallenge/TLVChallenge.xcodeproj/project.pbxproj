@@ -1,0 +1,650 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F264DB56213D4892007D1CFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F264DB55213D4892007D1CFD /* AppDelegate.swift */; };
+		F264DB58213D4892007D1CFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F264DB57213D4892007D1CFD /* ViewController.swift */; };
+		F264DB5B213D4892007D1CFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F264DB59213D4892007D1CFD /* Main.storyboard */; };
+		F264DB5E213D4892007D1CFD /* TLVChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F264DB5C213D4892007D1CFD /* TLVChallenge.xcdatamodeld */; };
+		F264DB60213D4897007D1CFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F264DB5F213D4897007D1CFD /* Assets.xcassets */; };
+		F264DB63213D4897007D1CFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F264DB61213D4897007D1CFD /* LaunchScreen.storyboard */; };
+		F264DB6E213D4898007D1CFD /* TLVChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F264DB6D213D4898007D1CFD /* TLVChallengeTests.swift */; };
+		F264DB79213D4898007D1CFD /* TLVChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F264DB78213D4898007D1CFD /* TLVChallengeUITests.swift */; };
+		F264DB8D213D770E007D1CFD /* TLVModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F264DB8C213D770E007D1CFD /* TLVModel.swift */; };
+		F264DB92213D783F007D1CFD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F264DB91213D783F007D1CFD /* Extensions.swift */; };
+		F264DB94213D7886007D1CFD /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F264DB93213D7886007D1CFD /* Utils.swift */; };
+		F264DB97213D7B71007D1CFD /* TLVDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F264DB96213D7B71007D1CFD /* TLVDetailCell.swift */; };
+		F264DB99213D7B7E007D1CFD /* TLVDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F264DB98213D7B7E007D1CFD /* TLVDetailCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F264DB6A213D4898007D1CFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F264DB4A213D4892007D1CFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F264DB51213D4892007D1CFD;
+			remoteInfo = TLVChallenge;
+		};
+		F264DB75213D4898007D1CFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F264DB4A213D4892007D1CFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F264DB51213D4892007D1CFD;
+			remoteInfo = TLVChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F264DB52213D4892007D1CFD /* TLVChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TLVChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F264DB55213D4892007D1CFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F264DB57213D4892007D1CFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F264DB5A213D4892007D1CFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F264DB5D213D4892007D1CFD /* TLVChallenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TLVChallenge.xcdatamodel; sourceTree = "<group>"; };
+		F264DB5F213D4897007D1CFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F264DB62213D4897007D1CFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F264DB64213D4897007D1CFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F264DB69213D4898007D1CFD /* TLVChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TLVChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F264DB6D213D4898007D1CFD /* TLVChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLVChallengeTests.swift; sourceTree = "<group>"; };
+		F264DB6F213D4898007D1CFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F264DB74213D4898007D1CFD /* TLVChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TLVChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F264DB78213D4898007D1CFD /* TLVChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLVChallengeUITests.swift; sourceTree = "<group>"; };
+		F264DB7A213D4898007D1CFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F264DB8C213D770E007D1CFD /* TLVModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLVModel.swift; sourceTree = "<group>"; };
+		F264DB91213D783F007D1CFD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F264DB93213D7886007D1CFD /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		F264DB96213D7B71007D1CFD /* TLVDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLVDetailCell.swift; sourceTree = "<group>"; };
+		F264DB98213D7B7E007D1CFD /* TLVDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TLVDetailCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F264DB4F213D4892007D1CFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F264DB66213D4898007D1CFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F264DB71213D4898007D1CFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F264DB49213D4892007D1CFD = {
+			isa = PBXGroup;
+			children = (
+				F264DB54213D4892007D1CFD /* TLVChallenge */,
+				F264DB6C213D4898007D1CFD /* TLVChallengeTests */,
+				F264DB77213D4898007D1CFD /* TLVChallengeUITests */,
+				F264DB53213D4892007D1CFD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F264DB53213D4892007D1CFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F264DB52213D4892007D1CFD /* TLVChallenge.app */,
+				F264DB69213D4898007D1CFD /* TLVChallengeTests.xctest */,
+				F264DB74213D4898007D1CFD /* TLVChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F264DB54213D4892007D1CFD /* TLVChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				F264DB95213D7B56007D1CFD /* Views */,
+				F264DB90213D7825007D1CFD /* Utilities */,
+				F264DB8B213D76F7007D1CFD /* Model */,
+				F264DB55213D4892007D1CFD /* AppDelegate.swift */,
+				F264DB57213D4892007D1CFD /* ViewController.swift */,
+				F264DB59213D4892007D1CFD /* Main.storyboard */,
+				F264DB5F213D4897007D1CFD /* Assets.xcassets */,
+				F264DB61213D4897007D1CFD /* LaunchScreen.storyboard */,
+				F264DB64213D4897007D1CFD /* Info.plist */,
+				F264DB5C213D4892007D1CFD /* TLVChallenge.xcdatamodeld */,
+			);
+			path = TLVChallenge;
+			sourceTree = "<group>";
+		};
+		F264DB6C213D4898007D1CFD /* TLVChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				F264DB6D213D4898007D1CFD /* TLVChallengeTests.swift */,
+				F264DB6F213D4898007D1CFD /* Info.plist */,
+			);
+			path = TLVChallengeTests;
+			sourceTree = "<group>";
+		};
+		F264DB77213D4898007D1CFD /* TLVChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F264DB78213D4898007D1CFD /* TLVChallengeUITests.swift */,
+				F264DB7A213D4898007D1CFD /* Info.plist */,
+			);
+			path = TLVChallengeUITests;
+			sourceTree = "<group>";
+		};
+		F264DB8B213D76F7007D1CFD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F264DB8C213D770E007D1CFD /* TLVModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F264DB90213D7825007D1CFD /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F264DB91213D783F007D1CFD /* Extensions.swift */,
+				F264DB93213D7886007D1CFD /* Utils.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F264DB95213D7B56007D1CFD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F264DB96213D7B71007D1CFD /* TLVDetailCell.swift */,
+				F264DB98213D7B7E007D1CFD /* TLVDetailCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F264DB51213D4892007D1CFD /* TLVChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F264DB7D213D4898007D1CFD /* Build configuration list for PBXNativeTarget "TLVChallenge" */;
+			buildPhases = (
+				F264DB4E213D4892007D1CFD /* Sources */,
+				F264DB4F213D4892007D1CFD /* Frameworks */,
+				F264DB50213D4892007D1CFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TLVChallenge;
+			productName = TLVChallenge;
+			productReference = F264DB52213D4892007D1CFD /* TLVChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F264DB68213D4898007D1CFD /* TLVChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F264DB80213D4898007D1CFD /* Build configuration list for PBXNativeTarget "TLVChallengeTests" */;
+			buildPhases = (
+				F264DB65213D4898007D1CFD /* Sources */,
+				F264DB66213D4898007D1CFD /* Frameworks */,
+				F264DB67213D4898007D1CFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F264DB6B213D4898007D1CFD /* PBXTargetDependency */,
+			);
+			name = TLVChallengeTests;
+			productName = TLVChallengeTests;
+			productReference = F264DB69213D4898007D1CFD /* TLVChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F264DB73213D4898007D1CFD /* TLVChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F264DB83213D4898007D1CFD /* Build configuration list for PBXNativeTarget "TLVChallengeUITests" */;
+			buildPhases = (
+				F264DB70213D4898007D1CFD /* Sources */,
+				F264DB71213D4898007D1CFD /* Frameworks */,
+				F264DB72213D4898007D1CFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F264DB76213D4898007D1CFD /* PBXTargetDependency */,
+			);
+			name = TLVChallengeUITests;
+			productName = TLVChallengeUITests;
+			productReference = F264DB74213D4898007D1CFD /* TLVChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F264DB4A213D4892007D1CFD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Aurora Rodríguez";
+				TargetAttributes = {
+					F264DB51213D4892007D1CFD = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					F264DB68213D4898007D1CFD = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = F264DB51213D4892007D1CFD;
+					};
+					F264DB73213D4898007D1CFD = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = F264DB51213D4892007D1CFD;
+					};
+				};
+			};
+			buildConfigurationList = F264DB4D213D4892007D1CFD /* Build configuration list for PBXProject "TLVChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F264DB49213D4892007D1CFD;
+			productRefGroup = F264DB53213D4892007D1CFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F264DB51213D4892007D1CFD /* TLVChallenge */,
+				F264DB68213D4898007D1CFD /* TLVChallengeTests */,
+				F264DB73213D4898007D1CFD /* TLVChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F264DB50213D4892007D1CFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F264DB63213D4897007D1CFD /* LaunchScreen.storyboard in Resources */,
+				F264DB60213D4897007D1CFD /* Assets.xcassets in Resources */,
+				F264DB5B213D4892007D1CFD /* Main.storyboard in Resources */,
+				F264DB99213D7B7E007D1CFD /* TLVDetailCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F264DB67213D4898007D1CFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F264DB72213D4898007D1CFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F264DB4E213D4892007D1CFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F264DB92213D783F007D1CFD /* Extensions.swift in Sources */,
+				F264DB97213D7B71007D1CFD /* TLVDetailCell.swift in Sources */,
+				F264DB8D213D770E007D1CFD /* TLVModel.swift in Sources */,
+				F264DB58213D4892007D1CFD /* ViewController.swift in Sources */,
+				F264DB5E213D4892007D1CFD /* TLVChallenge.xcdatamodeld in Sources */,
+				F264DB56213D4892007D1CFD /* AppDelegate.swift in Sources */,
+				F264DB94213D7886007D1CFD /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F264DB65213D4898007D1CFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F264DB6E213D4898007D1CFD /* TLVChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F264DB70213D4898007D1CFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F264DB79213D4898007D1CFD /* TLVChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F264DB6B213D4898007D1CFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F264DB51213D4892007D1CFD /* TLVChallenge */;
+			targetProxy = F264DB6A213D4898007D1CFD /* PBXContainerItemProxy */;
+		};
+		F264DB76213D4898007D1CFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F264DB51213D4892007D1CFD /* TLVChallenge */;
+			targetProxy = F264DB75213D4898007D1CFD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F264DB59213D4892007D1CFD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F264DB5A213D4892007D1CFD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F264DB61213D4897007D1CFD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F264DB62213D4897007D1CFD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F264DB7B213D4898007D1CFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F264DB7C213D4898007D1CFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F264DB7E213D4898007D1CFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9N5BU5HM23;
+				INFOPLIST_FILE = TLVChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyakyastudio.TLVChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F264DB7F213D4898007D1CFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9N5BU5HM23;
+				INFOPLIST_FILE = TLVChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyakyastudio.TLVChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F264DB81213D4898007D1CFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9N5BU5HM23;
+				INFOPLIST_FILE = TLVChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyakyastudio.TLVChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TLVChallenge.app/TLVChallenge";
+			};
+			name = Debug;
+		};
+		F264DB82213D4898007D1CFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9N5BU5HM23;
+				INFOPLIST_FILE = TLVChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyakyastudio.TLVChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TLVChallenge.app/TLVChallenge";
+			};
+			name = Release;
+		};
+		F264DB84213D4898007D1CFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9N5BU5HM23;
+				INFOPLIST_FILE = TLVChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyakyastudio.TLVChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TLVChallenge;
+			};
+			name = Debug;
+		};
+		F264DB85213D4898007D1CFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9N5BU5HM23;
+				INFOPLIST_FILE = TLVChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyakyastudio.TLVChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TLVChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F264DB4D213D4892007D1CFD /* Build configuration list for PBXProject "TLVChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F264DB7B213D4898007D1CFD /* Debug */,
+				F264DB7C213D4898007D1CFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F264DB7D213D4898007D1CFD /* Build configuration list for PBXNativeTarget "TLVChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F264DB7E213D4898007D1CFD /* Debug */,
+				F264DB7F213D4898007D1CFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F264DB80213D4898007D1CFD /* Build configuration list for PBXNativeTarget "TLVChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F264DB81213D4898007D1CFD /* Debug */,
+				F264DB82213D4898007D1CFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F264DB83213D4898007D1CFD /* Build configuration list for PBXNativeTarget "TLVChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F264DB84213D4898007D1CFD /* Debug */,
+				F264DB85213D4898007D1CFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F264DB5C213D4892007D1CFD /* TLVChallenge.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F264DB5D213D4892007D1CFD /* TLVChallenge.xcdatamodel */,
+			);
+			currentVersion = F264DB5D213D4892007D1CFD /* TLVChallenge.xcdatamodel */;
+			path = TLVChallenge.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F264DB4A213D4892007D1CFD /* Project object */;
+}

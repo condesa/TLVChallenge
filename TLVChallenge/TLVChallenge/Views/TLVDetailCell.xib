@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="89" id="J2l-fP-uB6" customClass="TLVDetailCell" customModule="TLVChallenge" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="784" height="89"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="J2l-fP-uB6" id="a1z-tn-C5i">
+                <rect key="frame" x="0.0" y="0.0" width="784" height="88.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5F20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93U-5q-9au">
+                        <rect key="frame" x="20" y="7.5" width="147" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cardholder Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rej-rW-SpA">
+                        <rect key="frame" x="175" y="8" width="589" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T D C B L A C K U N L I M I T E D V I S A" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ary-Z0-Id5">
+                        <rect key="frame" x="175" y="32.5" width="589" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ary-Z0-Id5" firstAttribute="top" secondItem="rej-rW-SpA" secondAttribute="bottom" constant="4" id="53Z-bg-rcC"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Ary-Z0-Id5" secondAttribute="bottom" constant="8" id="75h-RQ-G13"/>
+                    <constraint firstItem="rej-rW-SpA" firstAttribute="width" secondItem="93U-5q-9au" secondAttribute="width" multiplier="4" id="EsO-qh-and"/>
+                    <constraint firstItem="rej-rW-SpA" firstAttribute="leading" secondItem="93U-5q-9au" secondAttribute="trailing" constant="8" id="GAP-gu-eGS"/>
+                    <constraint firstItem="rej-rW-SpA" firstAttribute="top" secondItem="a1z-tn-C5i" secondAttribute="top" constant="8" id="IPv-rw-235"/>
+                    <constraint firstItem="Ary-Z0-Id5" firstAttribute="trailing" secondItem="rej-rW-SpA" secondAttribute="trailing" id="Ptr-tp-FfH"/>
+                    <constraint firstItem="93U-5q-9au" firstAttribute="centerY" secondItem="rej-rW-SpA" secondAttribute="centerY" id="Tlo-oX-rYu"/>
+                    <constraint firstItem="Ary-Z0-Id5" firstAttribute="leading" secondItem="rej-rW-SpA" secondAttribute="leading" id="ksI-YU-JEn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="93U-5q-9au" firstAttribute="leading" secondItem="J2l-fP-uB6" secondAttribute="leading" constant="20" id="ge0-v1-JV0"/>
+                <constraint firstAttribute="trailing" secondItem="rej-rW-SpA" secondAttribute="trailing" constant="20" id="zWA-Eh-YRs"/>
+            </constraints>
+            <connections>
+                <outlet property="tagLabel" destination="93U-5q-9au" id="rpT-Kp-xht"/>
+                <outlet property="tagMeaningLabel" destination="rej-rW-SpA" id="RpB-Fg-VuI"/>
+                <outlet property="tagValueLabel" destination="Ary-Z0-Id5" id="KNF-OP-zjY"/>
+            </connections>
+            <point key="canvasLocation" x="-592" y="-368.5"/>
+        </tableViewCell>
+    </objects>
+</document>
